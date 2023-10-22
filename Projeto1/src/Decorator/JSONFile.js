@@ -11,7 +11,7 @@ export default class JSONFile extends FileDecorator {
       return this.cities;
     } catch (error) {
       console.error('Erro ao analisar o arquivo JSON:', error);
-      return null; // Trate o erro de acordo com suas necessidades
+      return null;
     }
   }
 }

@@ -1,17 +1,17 @@
 import fs from 'node:fs';
 
 export default class File {
-  constructor (filepath) {
+  constructor(filepath) {
     this.filepath = filepath;
   }
 
-  read () {
-    this.cities_json = fs.readFileSync(this.filepath);
-    return this.cities_json
+  read() {
+    try {
+      const fileContent = fs.readFileSync(this.filepath, 'utf8');
+      return fileContent;
+    } catch (error) {
+      console.error('Erro ao ler o arquivo:', error);
+      return null;
+    }
   }
 }
-
-
-
-
-
