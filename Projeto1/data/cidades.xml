@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cidades>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100015</COD>
+    <Nome>Alta Floresta D'oeste</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100023</COD>
+    <Nome>Ariquemes</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100031</COD>
+    <Nome>Cabixi</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100049</COD>
+    <Nome>Cacoal</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100056</COD>
+    <Nome>Cerejeiras</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100064</COD>
+    <Nome>Colorado do Oeste</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100072</COD>
+    <Nome>Corumbiara</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100080</COD>
+    <Nome>Costa Marques</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100098</COD>
+    <Nome>Espigão D'oeste</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100106</COD>
+    <Nome>Guajará-Mirim</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100114</COD>
+    <Nome>Jaru</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100122</COD>
+    <Nome>Ji-Paraná</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100130</COD>
+    <Nome>Machadinho D'oeste</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100148</COD>
+    <Nome>Nova Brasilândia D'oeste</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100155</COD>
+    <Nome>Ouro Preto do Oeste</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100189</COD>
+    <Nome>Pimenta Bueno</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100205</COD>
+    <Nome>Porto Velho</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100254</COD>
+    <Nome>Presidente Médici</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100262</COD>
+    <Nome>Rio Crespo</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100288</COD>
+    <Nome>Rolim de Moura</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100296</COD>
+    <Nome>Santa Luzia D'oeste</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100304</COD>
+    <Nome>Vilhena</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100320</COD>
+    <Nome>São Miguel do Guaporé</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100338</COD>
+    <Nome>Nova Mamoré</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100346</COD>
+    <Nome>Alvorada D'oeste</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100379</COD>
+    <Nome>Alto Alegre dos Parecis</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100403</COD>
+    <Nome>Alto Paraíso</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100452</COD>
+    <Nome>Buritis</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100502</COD>
+    <Nome>Novo Horizonte do Oeste</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100601</COD>
+    <Nome>Cacaulândia</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100700</COD>
+    <Nome>Campo Novo de Rondônia</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100809</COD>
+    <Nome>Candeias do Jamari</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100908</COD>
+    <Nome>Castanheiras</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100924</COD>
+    <Nome>Chupinguaia</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1100940</COD>
+    <Nome>Cujubim</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101005</COD>
+    <Nome>Governador Jorge Teixeira</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101104</COD>
+    <Nome>Itapuã do Oeste</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101203</COD>
+    <Nome>Ministro Andreazza</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101302</COD>
+    <Nome>Mirante da Serra</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101401</COD>
+    <Nome>Monte Negro</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101435</COD>
+    <Nome>Nova União</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101450</COD>
+    <Nome>Parecis</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101468</COD>
+    <Nome>Pimenteiras do Oeste</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101476</COD>
+    <Nome>Primavera de Rondônia</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101484</COD>
+    <Nome>São Felipe D'oeste</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101492</COD>
+    <Nome>São Francisco do Guaporé</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101500</COD>
+    <Nome>Seringueiras</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101559</COD>
+    <Nome>Teixeirópolis</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101609</COD>
+    <Nome>Theobroma</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101708</COD>
+    <Nome>Urupá</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101757</COD>
+    <Nome>Vale do Anari</Nome>
+  </cidade>
+  <cidade>
+    <UF>11</UF>
+    <COD>1101807</COD>
+    <Nome>Vale do Paraíso</Nome>
+  </cidade>
+  <cidade>
+    <UF>12</UF>
+    <COD>1200013</COD>
+    <Nome>Acrelândia</Nome>
+  </cidade>
+  <cidade>
+    <UF>12</UF>
+    <COD>1200054</COD>
+    <Nome>Assis Brasil</Nome>
+  </cidade>
+  <cidade>
+    <UF>12</UF>
+    <COD>1200104</COD>
+    <Nome>Brasiléia</Nome>
+  </cidade>
+  <cidade>
+    <UF>12</UF>
+    <COD>1200138</COD>
+    <Nome>Bujari</Nome>
+  </cidade>
+  <cidade>
+    <UF>12</UF>
+    <COD>1200179</COD>
+    <Nome>Capixaba</Nome>
+  </cidade>
+  <cidade>
+    <UF>12</UF>
+    <COD>1200203</COD>
+    <Nome>Cruzeiro do Sul</Nome>
+  </cidade>
+  <cidade>
+    <UF>12</UF>
+    <COD>1200252</COD>
+    <Nome>Epitaciolândia</Nome>
+  </cidade>
+  <cidade>
+    <UF>12</UF>
+    <COD>1200302</COD>
+    <Nome>Feijó</Nome>
+  </cidade>
+  <cidade>
+    <UF>12</UF>
+    <COD>1200328</COD>
+    <Nome>Jordão</Nome>
+  </cidade>
+  <cidade>
+    <UF>12</UF>
+    <COD>1200336</COD>
+    <Nome>Mâncio Lima</Nome>
+  </cidade>
+</cidades>
