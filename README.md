@@ -12,3 +12,12 @@ de funcionalidades em um projeto e a sua refatoração utilizando padrões de pr
 1- Carregar multiplos formatos XML, CSV, YAML, HTML - Padrão de projeto: Decorator;
 
 2- Imprimir multiplos formatos de saída XML, CSV, HTML, JSON - Padrão de projeto: Command
+
+### Rodando o projeto:
+Crie um clone do repositorio em seu dispositivo e baixe as dependencias do sistema(Sera necessario ter o node instalado na sua maquina, junto com um gerenciador de pacotes)
+
+Para rodar o projeto pode-se utlizar o comando: node index "formatoEntrada" "formatoSaida"
+
+Valores validos para formato de entrada: json, csv, xml, html, yaml.
+
+Valores validos para saida: html, txt, json, csv, xml
