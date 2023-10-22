@@ -1,13 +1,12 @@
 
 export default class CitiesReporter {
-  constructor ({ formaterStrategy, fileName }) {
-    this._formaterStrategy = formaterStrategy;
+  constructor ({ OutputFormater, fileName }) {
+    this.OutputFormater = OutputFormater;
     this.fileName = fileName;
   }
 
-
   Execute () {
-    return this._formaterStrategy.output(this.fileName);
+    return this.OutputFormater.Execute(this.fileName);
   }
 
 }

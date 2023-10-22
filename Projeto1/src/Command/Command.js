@@ -1,6 +1,6 @@
-export default class AbstractFormater {
+export default class Command {
 
-  output (cities) {
+  Execute () {
     throw new Error('Should implement output method...');
   }
 

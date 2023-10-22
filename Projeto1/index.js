@@ -1,20 +1,22 @@
 import sys from 'node:sys';
 
-import FormaterHTML from './src/FormaterHTML.js';
-import FormaterTXT from './src/FormaterTXT.js';
 import CitiesReporter from './src/CitiesReporter.js';
 import JSONFile from './src/Decorator/JSONFile.js';
 import CSVFile from './src/Decorator/CSVFile.js';
 import XMLFile from './src/Decorator/XMLFile.js';
 import HTMLFile from './src/Decorator/HTMLFile.js';
 import YAMLFile from './src/Decorator/YAMLFile.js';
+import Output from './src/Command/Output.js';
+import OutputFormater from './src/Command/OutputFormater.js';
 
 const [cmd, script, param0, param1] = process.argv;
 
-const formaterStrategies = {
-  'html': new FormaterHTML(),
-  'txt': new FormaterTXT()
-};
+
+const output = new Output();
+const outputFormater = new OutputFormater({
+  Output: output,
+  Formater: param1
+});
 
 if (param0) {
   if (param0 == 'json') {
@@ -23,11 +25,11 @@ if (param0) {
     const jsonFile = new JSONFile(filepath);
     const fileTratado = jsonFile.convertFile();
       let reporter = new CitiesReporter({
-        formaterStrategy: formaterStrategies[param1],
+        OutputFormater: outputFormater,
         fileName: fileTratado
       }),
-        output = reporter.Execute();
-      console.log(output);
+        print = reporter.Execute();
+      console.log(print);
 
   }else if (param0 == 'csv') {
     //Carrega arquivo no formato CSV
@@ -36,11 +38,11 @@ if (param0) {
     csvFile.convertFile((data) => {
       if (data) {// 'data' é a lista de objetos representando o conteúdo do arquivo CSV
         let reporter = new CitiesReporter({
-          formaterStrategy: formaterStrategies[param1],
+          OutputFormater: outputFormater,
           fileName: data
         }),
-        output = reporter.Execute();
-        console.log(output);
+        print = reporter.Execute();
+        console.log(print);
       } else {
         console.error('Não foi possível ler ou analisar o arquivo CSV.');
       }
@@ -53,11 +55,11 @@ if (param0) {
     xmlFile.convertFile((data) => {
       if (data) {
         let reporter = new CitiesReporter({
-          formaterStrategy: formaterStrategies[param1],
+          OutputFormater: outputFormater,
           fileName: data
         }),
-        output = reporter.Execute();
-        console.log(output);
+        print = reporter.Execute();
+        console.log(print);
       } else {
         console.error('Não foi possível ler ou analisar o arquivo XML.');
       }
@@ -69,11 +71,11 @@ if (param0) {
     htmlFile.convertFile((data) => {
       if (data) {
         let reporter = new CitiesReporter({
-          formaterStrategy: formaterStrategies[param1],
+          OutputFormater: outputFormater,
           fileName: data
         }),
-        output = reporter.Execute();
-        console.log(output);
+        print = reporter.Execute();
+        console.log(print);
       } else {
         console.error('Não foi possível ler ou analisar o arquivo HTML.');
       }
@@ -85,11 +87,11 @@ if (param0) {
     yamlFile.convertFile((data) => {
       if (data) {
         let reporter = new CitiesReporter({
-          formaterStrategy: formaterStrategies[param1],
+          OutputFormater: outputFormater,
           fileName: data
         }),
-          output = reporter.Execute();
-        console.log(output);
+        print = reporter.Execute();
+        console.log(print);
       } else {
         console.error('Não foi possível ler ou analisar o arquivo YAML.');
       }
