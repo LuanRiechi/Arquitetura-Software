@@ -9,91 +9,98 @@ import XMLFile from './src/Decorator/XMLFile.js';
 import HTMLFile from './src/Decorator/HTMLFile.js';
 import YAMLFile from './src/Decorator/YAMLFile.js';
 
-const [cmd, script, param1] = process.argv;
+const [cmd, script, param0, param1] = process.argv;
 
 const formaterStrategies = {
   'html': new FormaterHTML(),
   'txt': new FormaterTXT()
 };
-//Carregar arquivo no formato Json
 
-// const filepath ='./data/cidades-2.json';
-// const jsonFile = new JSONFile(filepath);
-// const fileTratado = jsonFile.convertFile();
-// let reporter = new CitiesReporter({
-//       formaterStrategy: formaterStrategies[param1],
-//       fileName: fileTratado
-//     }),
-//     output = reporter.Execute();
-// console.log(output);
+if (param0) {
+  if (param0 == 'json') {
+    // Carregar arquivo no formato Json
+    const filepath = './data/cidades-2.json';
+    const jsonFile = new JSONFile(filepath);
+    const fileTratado = jsonFile.convertFile();
+      let reporter = new CitiesReporter({
+        formaterStrategy: formaterStrategies[param1],
+        fileName: fileTratado
+      }),
+        output = reporter.Execute();
+      console.log(output);
 
-//Carrega arquivo no formato CSV
+  }else if (param0 == 'csv') {
+    //Carrega arquivo no formato CSV
+    const filepath ='./data/cidades.csv';
+    const csvFile = new CSVFile(filepath);
+    csvFile.convertFile((data) => {
+      if (data) {// 'data' é a lista de objetos representando o conteúdo do arquivo CSV
+        let reporter = new CitiesReporter({
+          formaterStrategy: formaterStrategies[param1],
+          fileName: data
+        }),
+        output = reporter.Execute();
+        console.log(output);
+      } else {
+        console.error('Não foi possível ler ou analisar o arquivo CSV.');
+      }
+    });
 
-// const filepath ='./data/cidades.csv';
-// const csvFile = new CSVFile(filepath);
-// csvFile.convertFile((data) => {
-//   if (data) {// 'data' é a lista de objetos representando o conteúdo do arquivo CSV
-//     let reporter = new CitiesReporter({
-//       formaterStrategy: formaterStrategies[param1],
-//       fileName: data
-//     }),
-//      output = reporter.Execute();
-//     console.log(output);
-//   } else {
-//     console.error('Não foi possível ler ou analisar o arquivo CSV.');
-//   }
-// });
-
-//Carregar arquivo no formato XML
-
-// const filepath ='./data/cidades.xml';
-// const xmlFile = new XMLFile(filepath);
-// xmlFile.convertFile((data) => {
-//   if (data) {
-//     let reporter = new CitiesReporter({
-//       formaterStrategy: formaterStrategies[param1],
-//       fileName: data
-//     }),
-//      output = reporter.Execute();
-//     console.log(output);
-//   } else {
-//     console.error('Não foi possível ler ou analisar o arquivo XML.');
-//   }
-// });
-
-//Carregar arquivo no formato HTML
-
-// const filepath ='./data/cidades.html';
-// const htmlFile = new HTMLFile(filepath);
-// htmlFile.convertFile((data) => {
-//   if (data) {
-//     let reporter = new CitiesReporter({
-//       formaterStrategy: formaterStrategies[param1],
-//       fileName: data
-//     }),
-//      output = reporter.Execute();
-//     console.log(output);
-//   } else {
-//     console.error('Não foi possível ler ou analisar o arquivo HTML.');
-//   }
-// });
-
-//Carregar arquivo no formato YAML
-
-const filepath ='./data/cidades.yaml';
-const yamlFile = new YAMLFile(filepath);
-yamlFile.convertFile((data) => {
-  if (data) {
-    let reporter = new CitiesReporter({
-      formaterStrategy: formaterStrategies[param1],
-      fileName: data
-    }),
-     output = reporter.Execute();
-    console.log(output);
-  } else {
-    console.error('Não foi possível ler ou analisar o arquivo YAML.');
+  }else if(param0 == 'xml'){
+    //Carregar arquivo no formato XML
+    const filepath ='./data/cidades.xml';
+    const xmlFile = new XMLFile(filepath);
+    xmlFile.convertFile((data) => {
+      if (data) {
+        let reporter = new CitiesReporter({
+          formaterStrategy: formaterStrategies[param1],
+          fileName: data
+        }),
+        output = reporter.Execute();
+        console.log(output);
+      } else {
+        console.error('Não foi possível ler ou analisar o arquivo XML.');
+      }
+    });
+  }else if(param0 == 'html'){
+    //Carregar arquivo no formato HTML
+    const filepath ='./data/cidades.html';
+    const htmlFile = new HTMLFile(filepath);
+    htmlFile.convertFile((data) => {
+      if (data) {
+        let reporter = new CitiesReporter({
+          formaterStrategy: formaterStrategies[param1],
+          fileName: data
+        }),
+        output = reporter.Execute();
+        console.log(output);
+      } else {
+        console.error('Não foi possível ler ou analisar o arquivo HTML.');
+      }
+    });
+  }else if (param0 == 'yaml'){
+    //Carregar arquivo no formato YAML
+    const filepath = './data/cidades.yaml';
+    const yamlFile = new YAMLFile(filepath);
+    yamlFile.convertFile((data) => {
+      if (data) {
+        let reporter = new CitiesReporter({
+          formaterStrategy: formaterStrategies[param1],
+          fileName: data
+        }),
+          output = reporter.Execute();
+        console.log(output);
+      } else {
+        console.error('Não foi possível ler ou analisar o arquivo YAML.');
+      }
+    });
+  }else{
+    console.log("Tipo de entrada não permitida")
   }
-});
+
+}else {
+  console.log("Informe o tipo do arquivo de entrada")
+}
 
 
 
