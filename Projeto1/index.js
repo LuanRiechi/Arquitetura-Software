@@ -6,6 +6,7 @@ import CitiesReporter from './src/CitiesReporter.js';
 import JSONFile from './src/Decorator/JSONFile.js';
 import CSVFile from './src/Decorator/CSVFile.js';
 import XMLFile from './src/Decorator/XMLFile.js';
+import HTMLFile from './src/Decorator/HTMLFile.js';
 
 const [cmd, script, param1] = process.argv;
 
@@ -44,9 +45,26 @@ const formaterStrategies = {
 
 //Carregar arquivo no formato XML
 
-const filepath ='./data/cidades.xml';
-const xmlFile = new XMLFile(filepath);
-xmlFile.convertFile((data) => {
+// const filepath ='./data/cidades.xml';
+// const xmlFile = new XMLFile(filepath);
+// xmlFile.convertFile((data) => {
+//   if (data) {
+//     let reporter = new CitiesReporter({
+//       formaterStrategy: formaterStrategies[param1],
+//       fileName: data
+//     }),
+//      output = reporter.Execute();
+//     console.log(output);
+//   } else {
+//     console.error('Não foi possível ler ou analisar o arquivo XML.');
+//   }
+// });
+
+//Carregar arquivo no formato HTML
+
+const filepath ='./data/cidades.html';
+const htmlFile = new HTMLFile(filepath);
+htmlFile.convertFile((data) => {
   if (data) {
     let reporter = new CitiesReporter({
       formaterStrategy: formaterStrategies[param1],
@@ -55,7 +73,7 @@ xmlFile.convertFile((data) => {
      output = reporter.Execute();
     console.log(output);
   } else {
-    console.error('Não foi possível ler ou analisar o arquivo XML.');
+    console.error('Não foi possível ler ou analisar o arquivo HTML.');
   }
 });
 
